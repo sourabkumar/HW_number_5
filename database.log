@@ -1,0 +1,7 @@
+D, [2015-09-03T17:48:43.147390 #57891] DEBUG -- :   [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "full_name" varchar) [0m
+D, [2015-09-03T17:49:01.932667 #57891] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-09-03T17:49:01.986977 #57891] DEBUG -- :   [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sourab_skumar@yahoo.com' LIMIT 1[0m
+D, [2015-09-03T17:49:01.988001 #57891] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "full_name") VALUES (?, ?)  [["email", "sourab_skumar@yahoo.com"], ["full_name", "sourab kumar"]]
+D, [2015-09-03T17:49:01.990958 #57891] DEBUG -- :   [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+D, [2015-09-03T17:49:15.218513 #57891] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "sourab_skumar@yahoo.com"]]
+D, [2015-09-03T17:49:32.024139 #57891] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sourab_skumar@yahoo.com"]]
